@@ -1,10 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import { MinervaVivLensing } from "./minervaVivLensing";
+import { MinervaLensingDetailView, MinervaVivViewer } from "./minervaVivViewer";
+import { MinervaVivView } from "./minervaVivView";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+export {
+  MinervaVivLensing,
+  MinervaLensingDetailView,
+  MinervaVivViewer,
+  MinervaVivView,
+};
