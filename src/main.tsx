@@ -1,10 +1,6 @@
-import { MinervaVivLensing } from "./minervaVivLensing";
-import { MinervaLensingDetailView, MinervaVivViewer } from "./minervaVivViewer";
-import { MinervaVivView } from "./minervaVivView";
-
-export {
+import {
   MinervaVivLensing,
-  MinervaLensingDetailView,
-  MinervaVivViewer,
-  MinervaVivView,
-};
+  MinervaVivLensingDetailView,
+} from "./minervaVivLensing";
+
+export { MinervaVivLensing, MinervaVivLensingDetailView };
