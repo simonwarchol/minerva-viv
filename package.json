@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "vite build",
+    "build": "esbuild src/main.tsx --bundle --sourcemap=inline --minify --packages=external --outfile=dist/build.js",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
-  "main": "dist/minerva-viv.umd.cjs",
+  "main": "dist/build.js",
   "dependencies": {
     "@danmarshall/deckgl-typings": "^4.0.0",
     "@deck.gl/core": "^8.8.6",
@@ -41,12 +41,10 @@
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
-    "@vitejs/plugin-react": "^4.0.3",
     "@vivjs/types": "^0.13.7",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "typescript": "^5.0.2"
   }
 }
